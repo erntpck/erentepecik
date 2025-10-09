@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eren Tepecik - Yakında Sizlerleyim 😎</title>
+
+  <style>
+    /* --- GENEL TASARIM --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* --- ANİMASYONLU IŞIK EFEKTİ --- */
+    .glow {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #fff;
+      text-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff, 0 0 40px #00e0ff;
+      animation: glowPulse 2s infinite alternate;
+    }
+
+    @keyframes glowPulse {
+      from {
+        text-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+      }
+      to {
+        text-shadow: 0 0 25px #00e0ff, 0 0 50px #00e0ff;
+      }
+    }
+
+    /* --- ALT YAZI --- */
+    .subtext {
+      font-size: 1.1rem;
+      margin-top: 12px;
+      opacity: 0.8;
+    }
+
+    /* --- TELEGRAM BUTONU --- */
+    .telegram-btn {
+      margin-top: 40px;
+      display: inline-block;
+      background: #2AABEE;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      box-shadow: 0 0 15px rgba(42, 171, 238, 0.6);
+      transition: all 0.3s ease;
+    }
+    .telegram-btn:hover {
+      background: #1f93d1;
+      box-shadow: 0 0 25px rgba(42, 171, 238, 1);
+      transform: scale(1.05);
+    }
+
+    /* --- EREN FOTO ALANI --- */
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #00e0ff;
+      box-shadow: 0 0 20px rgba(0, 224, 255, 0.7);
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+      object-fit: cover;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+
+    /* --- ALT YAZI ALANI --- */
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="image.png" alt="Eren Tepecik" class="avatar" />
+  
+  <h1 class="glow">Yakında Sizlerleyim 😎</h1>
+  <p class="subtext">Bir kahve molasındayım, az sonra geliyorum ☕</p>
+
+  <!-- <a href="#" target="_blank" class="telegram-btn">
+    Telegram'dan Bana Ulaş 📩
+  </a> -->
+
+  <footer>© 2025 Eren Tepecik | Tüm hakları saklıdır</footer>
+</body>
+</html>
