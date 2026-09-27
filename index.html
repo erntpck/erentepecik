@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Eren Tepecik</title>
-  <meta name="description" content="Eren Tepecik, bağımsız mobil uygulama geliştirici. iOS ve Android için sade, hesapsız ve reklamsız uygulamalar. İlk uygulama: Lulla.">
+  <meta name="description" content="Eren Tepecik, bağımsız mobil uygulama geliştirici. iOS ve Android için sade, hesapsız ve reklamsız uygulamalar. İlk uygulama: Small Mornings.">
   <meta name="theme-color" content="#F6F3EE">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Eren Tepecik">
@@ -153,6 +153,7 @@
     .app-icon img { width: 72px; height: 72px; }
     .app h3 { font-family: var(--display); font-weight: 800; font-size: 1.5rem; margin: 0 0 4px; letter-spacing: -0.02em; line-height: 1.1; }
     .app .tag { color: var(--ink-2); margin: 0; font-size: 0.95rem; }
+    .app h3 a:hover, .app h3 a:focus-visible { color: var(--accent); }
     .facts { display: flex; flex-direction: column; gap: 8px; }
     .facts li { position: relative; padding-left: 18px; color: var(--ink); font-size: 0.95rem; }
     .facts li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 8px; height: 2px; background: var(--accent); }
@@ -178,7 +179,7 @@
     .btn.is-soon { color: var(--ink-2); border-style: dashed; cursor: default; }
     .btn.is-soon:hover { border-color: var(--hair); }
 
-    /* Tek gerçek uygulama varken (Lulla + "Yolda"): Lulla masaüstünde iki sütunu kaplar.
+    /* Tek gerçek uygulama varken (Small Mornings + "Yolda"): Small Mornings masaüstünde iki sütunu kaplar.
        İkinci bir uygulama eklendiğinde bu kural kendiliğinden devre dışı kalır ve kartlar ikişer sütuna dizilir. */
     @media (min-width: 720px) {
       .grid .app:first-child:nth-last-child(2) { grid-column: 1 / -1; padding: 40px; gap: 22px; }
@@ -275,7 +276,7 @@
         <h1 class="name" id="ad">Eren Tepecik</h1>
         <p class="role">Bağımsız mobil uygulama geliştirici, iOS ve Android.</p>
         <p class="lede">Hesap istemeyen, reklam göstermeyen ve verinizi telefonunuzda tutan sade uygulamalar yapıyorum.</p>
-        <a class="pill" href="#uygulamalar"><span class="dot" aria-hidden="true"></span><span><span class="k">Şu an:</span> Lulla, App Store'a hazırlanıyor</span></a>
+        <a class="pill" href="#uygulamalar"><span class="dot" aria-hidden="true"></span><span><span class="k">Şu an:</span> Small Mornings, App Store'a hazırlanıyor</span></a>
       </section>
 
       <section id="uygulamalar" aria-labelledby="h-apps">
@@ -290,9 +291,9 @@
 
           <article class="app">
             <div class="app-head">
-              <div class="app-icon"><img src="assets/lulla-icon-256.png" width="72" height="72" alt="Lulla uygulama ikonu"></div>
+              <div class="app-icon"><img src="assets/smallmornings-icon-256.png" width="72" height="72" alt="Small Mornings uygulama ikonu"></div>
               <div>
-                <h3>Lulla</h3>
+                <h3><a href="https://smallmornings.com/">Small Mornings</a></h3>
                 <p class="tag">Bebek, aşı ve anne takibi</p>
               </div>
             </div>
@@ -305,7 +306,7 @@
               <!-- APP STORE BAĞLANTISI: uygulama yayınlanınca aşağıdaki <span class="btn btn-ghost is-soon"> satırını silip
                    yerine şunu yazın: <a class="btn btn-primary" href="https://apps.apple.com/...">App Store</a> -->
               <span class="btn btn-ghost is-soon">App Store <span class="small">yakında</span></span>
-              <a class="btn btn-ghost" href="https://erentepecik.com/lulla/privacy/"><span>Gizlilik politikası</span></a>
+              <a class="btn btn-ghost" href="https://smallmornings.com/"><span>smallmornings.com</span></a>
             </div>
           </article>
 
@@ -363,8 +364,6 @@
 
     <footer>
       <span>© 2026 Eren Tepecik</span>
-      <span class="sep" aria-hidden="true">·</span>
-      <a href="https://erentepecik.com/lulla/privacy/">Gizlilik politikası (Lulla)</a>
       <span class="site">erentepecik.com</span>
     </footer>
 
